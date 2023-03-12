@@ -59,8 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
  
     const searchBar = document.getElementById('search');
     searchBar.addEventListener('keyup', () => {
-        const searchText = searchBar.value.toLowerCase();
-        const filteredProductIds = searchText ? productService.searchProducts(searchText) : productService.getProducts().map((product) => product.productId);
+        const searchText = searchBar.value;
+        const filteredProductIds = 
+        searchText ? productService.searchProducts(searchText) : productService.getProducts().map((product) => product.productId);
         const productCards = document.querySelectorAll('.product-card');
         productCards.forEach((card) => {
             if (filteredProductIds.includes(Number(card.querySelector('.product-name').getAttribute('data-id')))) {
