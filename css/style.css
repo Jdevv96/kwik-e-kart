@@ -1,0 +1,190 @@
+/* Initial Grid Layout */
+
+#body {
+    margin: 0;
+}
+
+.head-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(160, 160, 160);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ffffff;
+} 
+
+#nav {
+    position: sticky;
+    display: flex;
+    border: 1px solid #ffffff;
+    border-top: 0;
+    z-index: 999;
+}
+
+#nav a {
+    text-decoration: none;
+    color: navy;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav a:hover {
+    color: gainsboro;
+}
+
+#home, #cart {
+    margin-right: 0;
+}
+
+#cart {
+    margin-left: 10px;
+}
+
+#status {
+    margin-left: auto;
+    color: white;
+}
+
+#status2 {
+    display: none;
+}
+
+#logout {
+    margin-left: auto;
+}
+
+#main {
+    padding: 0px 10px;
+}
+
+#main > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchContainer {
+    position: relative;
+}
+
+#search {
+    padding-right: 30px; 
+}
+  
+.fa-magnifying-glass {
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+}
+
+#product-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product-card {
+    border: 1px solid black;
+    display: grid;
+    padding: 0 10px;
+    grid-template-columns: 150px 150px;
+    grid-template-areas: 
+    "sku price"
+    "product product"
+    "image image"
+    ". cart";
+}
+
+.product-card.hidden {
+    display: none;
+}
+
+.sku {
+    grid-area: sku;
+}
+
+.price {
+    grid-area: price;
+    justify-self: end;
+}
+
+.product-name {
+    grid-area: product;
+}
+
+.product-name:hover {
+    color: gainsboro;
+}
+
+.product-image {
+    justify-self: center;
+    grid-area: image;
+}
+
+.product-image > img {
+    border-radius: 40px;
+    width: 100%;
+}
+
+.cart {
+    grid-area: cart;
+    justify-self: end;
+}
+
+.cart:hover {
+    color: gainsboro;
+}
+
+#footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    border: 1px solid black;
+    background-color: rgb(160, 160, 160);
+}
+
+@media only screen and (max-width: 684px) {
+    * {
+        max-width: 100%;
+    }
+
+    #logo {
+        margin: 10px;
+    }
+
+    #product-cards {
+        justify-content: center;
+    }
+
+    #status {
+        display: none;
+    }
+
+    #status2 {
+        display: inherit;
+        margin-left: auto;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 685px) {
+    * {
+        max-width: 100%;
+    }
+
+    #logo {
+        margin: 10px;
+    }
+
+    #product-cards {
+        justify-content: center;
+    }
+
+}

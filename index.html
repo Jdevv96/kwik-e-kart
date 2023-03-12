@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SSGeek online store</title>
+    <link rel="icon" href="./icon/basket.png">    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- Scripts -->
+    <script src="script/productService.js"></script>
+    <script src="script/app.js"></script>
+  </head>
+  <body id="body">
+    <div id="app">
+      <div class="head-wrap">
+        <header id="header">
+          <div id="logo">
+            <img src="img/kwik-e-kart.png">
+          </div>
+        </header>
+        <nav id="nav">
+            <div id="home"><a href="#">Home</a></div>
+            <div id="cart"><a href="#">Cart</a></div>
+            <div class="addedTo" id="status"></div>
+            <div class="addedTo" id="status2"></div>
+            <div id="logout"><a href="#">Logout</a></div>
+        </nav>
+      </div>
+      <main id="main">  
+        <header>
+          <h1>Products</h1>
+          <form>
+            <div class="searchContainer">
+              <input id="search" type="text" placeholder="Search...">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </form>
+        </header> 
+        <summary>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum. Autem consequuntur cum sed unde numquam expedita, molestias doloremque sapiente corrupti odio facere? Ab culpa doloremque quaerat aperiam distinctio reiciendis eius accusamus ex excepturi, exercitationem molestias rerum, nemo repellat cumque odit molestiae consectetur dolorem numquam. Ullam totam perspiciatis ipsa et!</p>
+        </summary>
+      <!--Card data below-->
+        <section id="product-cards">
+          <!--
+          <article class="product-card">
+            <div class="sku">SKU-001</div>
+            <div class="price">$1.99</div>
+            <div class="product-name action" data-id="1">A super product</div>
+            <div class="product-image">
+              <img src="https://via.placeholder.com/350x250.jpg">
+            </div>
+            <div class="cart">
+              <i class="fa-solid fa-cart-plus icon action" title="Add item to cart"></i>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="sku">SKU-002</div>
+            <div class="price">$2.99</div>
+            <div class="product-name action" data-id="2">A super-duper product</div>
+            <div class="product-image">
+              <img src="https://via.placeholder.com/350x250.jpg">
+            </div>
+            <div class="cart">
+              <i class="fa-solid fa-cart-plus icon action" title="Add item to cart"></i>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="sku">SKU-003</div>
+            <div class="price">$3.99</div>
+            <div class="product-name action" data-id="3">A super-duper-duper product</div>
+            <div class="product-image">
+              <img src="https://via.placeholder.com/350x250.jpg">
+            </div>
+            <div class="cart">
+              <i class="fa-solid fa-cart-plus icon action" title="Add item to cart"></i>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="sku">SKU-004</div>
+            <div class="price">$4.99</div>
+            <div class="product-name action" data-id="4">A super-duper-duper-duper product. I mean, a really awesome product. </div>
+            <div class="product-image">
+              <img src="https://via.placeholder.com/350x250.jpg">
+            </div>
+            <div class="cart">
+              <i class="fa-solid fa-cart-plus icon action" title="Add item to cart"></i>
+            </div>
+          </article>
+          -->
+        </section>
+      </main>
+      <footer id="footer">
+        <div id="copyright">&copy; 2022 All rights reserved.</div>
+      </footer>
+    </div>
+  </body>
+</html>
