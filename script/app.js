@@ -1,7 +1,3 @@
-/*
-    app.js
-
-*/
 function createArticle(product) {
     const article = document.createElement('article');
     article.classList.add('product-card');
